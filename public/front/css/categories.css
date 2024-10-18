@@ -1,0 +1,169 @@
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+
+    padding: 30px;
+    overflow: hidden;
+    background-color: #ffffff;
+    gap: 10px;
+}
+
+.categories-container .owl-carousel {
+    width: 100%;
+    height: 250px;
+    max-width: 1350px;
+}
+
+.categories-container .owl-carousel .owl-stage {
+    height: 100% !important;
+}
+
+.categories-container .owl-carousel .owl-stage-outer {
+    height: 100% !important;
+    padding-left: 50px;
+}
+
+.categories-container .owl-carousel .owl-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    width: 150px !important;
+}
+
+.categories-container .owl-carousel .category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-1);
+    font-family: var(--font-family-1);
+    /* margin-right: 50px !important; */
+}
+
+.categories-container .owl-carousel .image-container {
+    width: 120px;
+    height: 120px !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    z-index: 4;
+}
+
+.categories-container .owl-carousel .owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    z-index: 3;
+}
+
+.categories-container .owl-carousel .owl-nav .owl-next,
+.categories-container .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: var(--color-1);
+    font-size: 30px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    height: 100%;
+    width: 40px;
+}
+
+.categories-container .owl-carousel .owl-nav .owl-next {
+    right: 0;
+}
+
+.categories-container .owl-carousel .owl-nav .owl-prev {
+    left: 0;
+}
+
+.categories-container .owl-carousel .owl-nav button {
+    border: none;
+    font-size: 50px;
+    font-weight: 600;
+    width: 40px;
+    height: 70px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .categories-container {
+        gap: 40px;
+    }
+    .items-container {
+        padding: 0 10px 30px 10px !important;
+    }
+    .categories-container .owl-carousel {
+        display: none;
+    }
+
+    .categories-container .categories {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        row-gap: auto;
+        width: 100%;
+    }
+    .categories .category-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--color-1);
+        font-family: var(--font-family-1);
+        width: 100% !important;
+        height: auto;
+    }
+
+    .categories .image-container {
+        width: 100px;
+        height: 100px !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% 100% !important;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+
+        z-index: 4;
+    }
+}

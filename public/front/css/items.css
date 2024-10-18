@@ -1,0 +1,226 @@
+.items-container {
+    width: 100%;
+    min-height: 400px;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    /* background-color: #f8f9fa; */
+    font-family: var(--font-family-2);
+}
+
+.items-container:dir(rtl) {
+    font-family: var(--font-family-1);
+}
+
+.items-container .items {
+    max-width: 1350px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    row-gap: 30px;
+    gap: 20px;
+}
+
+.items-container .items .item {
+    max-width: 300px;
+    border: 1px solid #030303;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    background-color: var(--color-2);
+}
+
+.items-container .items .item a.item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+a.item-content .item-title {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-family-2);
+    color: var(--color-1);
+}
+
+/* .item-content .item-description {
+    font-size: 30px;
+    text-overflow: hidden;
+    line-height: 25px;
+    max-height: 100px;
+    overflow: hidden;
+    color: #333334;
+    font-family: "Arimo", sans-serif !important;
+} */
+
+a.item-content .item-description {
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #333334;
+    height: 100px;
+    overflow: hidden;
+    line-height: 25px;
+}
+
+.item-number {
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #333334;
+}
+
+div.item-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-family-2);
+    color: var(--color-1);
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    gap: 5px;
+}
+
+div.item-footer:dir(rtl) {
+    font-family: var(--font-family-1);
+}
+
+div.item-footer .item-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    flex: auto;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+div.item-footer .item-gift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color-2);
+    border: 1px solid var(--color-1);
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+div.item-footer .item-gift:hover {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+@media screen and (max-width: 1000px) {
+    .items-container .items {
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .items-container .items {
+        justify-content: space-between;
+        gap: 0px;
+        row-gap: 20px;
+    }
+
+    .items-container .items .item {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .items-container .items {
+        flex-direction: column;
+    }
+
+    .items-container .items .item {
+        width: 100%;
+    }
+}
+
+.section-title {
+    font-family: "Almarai", sans-serif !important;
+    font-weight: bold !important;
+    font-size: 18px;
+    color: #136e81;
+    text-transform: capitalize;
+}
+
+.title-ser {
+    font-size: 18px !important;
+    line-height: 28px !important;
+    font-family: "Almarai", sans-serif !important;
+    font-weight: 900 !important;
+}
+
+.text-container {
+    font-family: "Almarai", sans-serif !important;
+    font-weight: normal !important;
+}
+
+.title-pac {
+    font-family: "Almarai", sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+}
+
+.item-numbe {
+    font-family: "Almarai", sans-serif !important;
+}
+
+.item-description {
+    font-family: "Almarai", sans-serif !important;
+    font-size: 15px;
+    text-overflow: hidden;
+    line-height: 25px !important;
+    max-height: 100px;
+    font-weight: 700;
+}
+
+.item-number {
+    font-family: "Almarai", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+}
+
+.item-price {
+    display: inline !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .item-price {
+        font-size: 14px;
+    }
+}

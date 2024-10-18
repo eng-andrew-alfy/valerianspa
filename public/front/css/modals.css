@@ -1,0 +1,236 @@
+.ms-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 1001;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.ms-modal.active {
+    display: flex;
+}
+
+.ms-modal .ms-modal-content {
+    width: 100%;
+    height: 66%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-2);
+}
+
+.ms-modal .ms-modal-header {
+    display: flex;
+    align-items: center !important;
+    gap: 10px;
+    font-weight: 600;
+    padding: 20px 20px;
+}
+
+.icon {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ms-modal .ms-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: auto;
+}
+
+.ms-modal .ms-modal-body .address-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.ms-modal .ms-modal-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.ms-radio-label {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font-family-1);
+    color: var(--color-3);
+    background-color: var(--color-4);
+    padding: 10px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.ms-radio-label input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.ms-radio-label-actions {
+    display: flex;
+    gap: 15px;
+}
+.ms-radio-label .btn-edit,
+.ms-radio-label .btn-delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font-family-1);
+}
+
+.ms-radio-label .btn-delete {
+    color: rgb(205, 0, 0);
+}
+
+/* .ms-radio-label .ms-radio-label-content {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+} */
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.color-bl {
+    color: #adadad;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.ms-btn-primary {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border: none;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+}
+
+.ms-btn-primary:hover {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: 1px solid var(--color-1);
+}
+
+.ms-btn-secondary {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: 1px solid var(--color-1);
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+@media screen and (min-width: 700px) {
+    .ms-modal {
+        padding: 30px 20px;
+    }
+    .ms-modal .ms-modal-content {
+        max-width: 500px;
+        height: max-content;
+        border-radius: 5px;
+        align-content: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+}
+
+.locations-wrapper {
+    display: flex;
+    gap: 20px;
+    /* مسافة بين العنصرين */
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+    /* لمحاذاة العناصر عموديًا */
+    gap: 10px;
+    /* مسافة بين الأيقونة والتفاصيل والزر */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.add-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+
+    gap: 7px;
+}
+
+@media (max-width: 768px) {
+    .add-container {
+        grid-template-columns: 3fr !important;
+    }
+}
+
+.padd {
+    padding: 45px 80px !important;
+}
+
+@media (max-width: 768px) {
+    .padd {
+        padding: 45px 9px !important;
+    }
+}

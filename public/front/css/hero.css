@@ -1,0 +1,195 @@
+.hero-container {
+    width: 100%;
+    overflow: hidden;
+    height: calc(100vh - 70px);
+    position: relative;
+    display: flex;
+}
+
+.owl-carousel {
+    max-width: 100%;
+}
+
+.hero-container .owl-stage {
+    display: flex;
+    width: max-content;
+}
+
+.hero-container .owl-carousel .owl-item {
+    display: flex;
+    height: calc(100vh - 70px);
+    cursor: pointer;
+}
+
+.hero-container .owl-carousel .image-container {
+    width: 100%;
+    height: 100% !important;
+    background-color: #136f81;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+}
+
+.hero-container .owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #136f818f;
+    padding: 0 30px;
+    height: 40px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.hero-container .owl-carousel .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero-container .owl-carousel .owl-dots .owl-dot.active {
+    background-color: var(--color-2);
+    width: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.hero-container .owl-carousel .owl-dots:hover {
+    background-color: var(--color-1);
+}
+
+.hero-container .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0 40px;
+}
+
+.hero-container .owl-carousel .owl-nav button {
+    border: none;
+    background-color: #136f818f;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    width: 40px;
+    height: 70px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-container .owl-carousel .owl-nav button:hover {
+    background-color: var(--color-1);
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        justify-content: center;
+        height: 270px;
+        padding: 60px 0px;
+    }
+
+    .owl-carousel {
+        max-width: 100%;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .owl-carousel .owl-stage {
+        height: 100% !important;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        height: 100% !important;
+    }
+
+    .owl-carousel .owl-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100% !important;
+    }
+
+    /* .owl-carousel .owl-item img {
+        width: 100%;
+        height: 100px !important;
+        object-fit: fill;
+    } */
+
+    .hero-container .owl-carousel .image-container {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    .hero-container .owl-carousel .owl-nav {
+        display: none;
+    }
+
+    .hero-container .owl-carousel .owl-dots {
+        top: 100%;
+        bottom: 0;
+        background-color: unset;
+    }
+
+    .hero-container .owl-carousel .owl-dots:hover {
+        background-color: unset;
+    }
+
+    .hero-container .owl-carousel .owl-dots .owl-dot {
+        background-color: var(--color-5);
+    }
+    .hero-container .owl-carousel .owl-dots .owl-dot.active {
+        background-color: var(--color-1);
+        width: 20px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-container {
+        justify-content: center;
+        height: 270px;
+        padding: 60px 0px;
+    }
+}
